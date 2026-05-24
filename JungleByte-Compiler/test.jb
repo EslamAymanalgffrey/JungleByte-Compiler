@@ -1,0 +1,53 @@
+# ================= FULL TEST SUITE =================
+
+climbUp add(a, b):
+    ooh_ooh a
+
+
+climbUp main():
+
+    # ===== BASIC =====
+    x = 2
+    ooh_ooh "Start"
+
+    # ===== ARITHMETIC =====
+    y = 2 + 3 * 4
+    ooh_ooh y
+
+    # ===== IF / ELSE IF / ELSE =====
+    branchIf x > 3:
+        ooh_ooh "Big"
+    branchElseIf x == 2:
+        ooh_ooh "Equal"
+    branchElse:
+        ooh_ooh "Small"
+
+    # ===== WHILE =====
+    swing x < 5:
+        ooh_ooh "Loop"
+        x += 1
+
+    # ===== FOR =====
+    climb i in range(3):
+        ooh_ooh i
+
+    # ===== OPERATORS =====
+    z = 10
+    z += 5
+    z *= 2
+    z--
+    ooh_ooh z
+
+    # ===== FUNCTION CALL =====
+    result = add(3, 4)
+    ooh_ooh result
+
+    # ===== NESTED =====
+    climb i in range(2):
+        branchIf i == 0:
+            ooh_ooh "First"
+        branchElse:
+            ooh_ooh "Second"
+
+    # ===== FINAL =====
+    ooh_ooh "Done"
